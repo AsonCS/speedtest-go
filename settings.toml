@@ -16,7 +16,7 @@ ipinfo_api_key=""
 assets_path=""
 
 # password for logging into statistics page
-statistics_password="PASSWORD"
+statistics_password="admin"
 # redact IP addresses
 redact_ip_addresses=false
 

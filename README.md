@@ -158,6 +158,38 @@ You need Go 1.21+ to compile the binary.
 attempt to fetch your current network's ISP info for distance calculation between your network and the speed test client's.
 This action will only be taken once, and cached for later use.
 
+## Docker
+
+1. Build
+
+```bash
+docker build -t ason-speedtest .
+```
+
+2. Run
+
+```bash
+docker run -d -p 8989:8989 --name ason-speedtest ason-speedtest
+```
+
+3. Tag
+
+```bash
+docker tag ason-speedtest ghcr.io/asoncs/ason-speedtest:1
+docker tag ason-speedtest europe-west1-docker.pkg.dev/gen-lang-client-0069544432/ason-speedtest/ason-speedtest:1
+```
+
+3. Push
+
+```bash
+docker push ghcr.io/asoncs/ason-speedtest:1
+docker push europe-west1-docker.pkg.dev/gen-lang-client-0069544432/ason-speedtest/ason-speedtest:1
+```
+
+## Deploy
+
+[Stats](https://ason-speedtest-670514734786.europe-west1.run.app/stats)
+
 ## License
 Copyright (C) 2016-2020 Federico Dossena
 Copyright (C) 2020 Maddie Zhan
