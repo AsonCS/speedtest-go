@@ -9,7 +9,6 @@ COPY ./ ./
 ENV CGO_ENABLED=0
 ARG TARGETOS TARGETARCH
 RUN GOOS=$TARGETOS GOARCH=$TARGETARCH go build -ldflags "-w -s" -trimpath -buildvcs=false -o speedtest .
-RUN go build -ldflags "-w -s" -trimpath -buildvcs=false -o speedtest .
 
 FROM scratch
 WORKDIR /app
