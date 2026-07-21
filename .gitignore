@@ -132,6 +132,11 @@ Temporary Items
 # vendor/
 
 speedtest.db
+speedtest.db-shm
+speedtest.db-wal
 .idea/
 speedtest-backend
 dist/
+
+# Ignore generated credentials from google-github-actions/auth
+gha-creds-*.json
